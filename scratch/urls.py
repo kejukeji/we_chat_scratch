@@ -3,5 +3,6 @@
 from scratch import app
 
 # 微信页面
-from .views.web import scratch_home
-app.add_url_rule('/scratch', 'scratch_home', scratch_home, methods=('GET', 'POST'))
+# from .views.web import scratch_home
+from scratch.restful.verify import weixin
+app.add_url_rule('/scratch', 'weixin', weixin, methods=('GET', 'POST'))
