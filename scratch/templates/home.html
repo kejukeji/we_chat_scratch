@@ -1,0 +1,21 @@
+{% extends 'admin/master.html' %}
+{% import 'admin/lib.html' as lib with context %}
+
+{% block head %}
+    {{ super() }}
+    <link href="{{ url_for('admin.static', filename='select2/select2.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {% if user %}
+        <p>你已经以用户{{ user }}登陆账户</p>
+        <a href="/logout" class="btn">退出登陆<a>
+    {% else %}
+        <a href="/login" class="btn">登陆用户</a><br>
+        {#<a href="/register" class="btn">注册用户</a>#}
+    {% endif %}
+{% endblock %}
+
+{% block tail %}
+  {{ super() }}
+{% endblock %}

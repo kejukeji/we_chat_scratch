@@ -1,0 +1,5 @@
+PICTURE_ALLOWED_EXTENSION = ('png', 'jpg', 'jpeg')
+
+PUB_PICTURE_BASE_PATH = "/Users/X/Dropbox/Code/pub"
+PUB_PICTURE_REL_PATH = "/static/system/pub_picture"
+PUB_PICTURE_SIZE = (640, 288)
