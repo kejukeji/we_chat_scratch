@@ -48,10 +48,16 @@ def response_text(xml_recv, web_chat, pub_id):
     FromUserName = xml_recv.find("FromUserName").text
 
     reply_dict = {
-        "ToUserName": FromUserName,
-        "FromUserName": ToUserName,
-        "Content": Content
-    }
+            "ToUserName": FromUserName,
+            "FromUserName": ToUserName,
+            "ArticleCount": 1,
+            "item": [{
+                "Title": str('刮刮'),
+                "Description": str('好玩'),
+                "PicUrl": BASE_URL+ '',
+                "Url": BASE_URL + '/scratch/home'
+            }]
+        }
     return response(web_chat, reply_dict, "text")
 
 
