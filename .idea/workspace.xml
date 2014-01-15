@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3926763-c3b4-4e1d-9f23-5b68f295d45b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scratch/templates/scratch.html" afterPath="$PROJECT_DIR$/scratch/templates/scratch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/static/images/scratch_matter.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scratch/restful/verify.py" afterPath="$PROJECT_DIR$/scratch/restful/verify.py" />
     </list>
     <ignored path="web_chat_sratch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="verify.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="verify.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scratch/restful/verify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="7.2" vertical-offset="480" max-vertical-offset="3780">
+            <state line="57" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.4883721" vertical-offset="645" max-vertical-offset="3780">
               <folding>
                 <element signature="e#34#74#0" expanded="true" />
               </folding>
@@ -48,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scratch.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratch/templates/scratch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="35" selection-start="401" selection-end="401" vertical-scroll-proportion="0.4176334" vertical-offset="0" max-vertical-offset="1215">
+            <state line="12" column="35" selection-start="401" selection-end="401" vertical-scroll-proportion="0.625" vertical-offset="195" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -69,7 +70,7 @@
       <file leaf-file-name="setting.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratch/setting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="39" selection-start="621" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="19" column="8" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -138,8 +139,8 @@
         <option value="$PROJECT_DIR$/scratch/urls.py" />
         <option value="$PROJECT_DIR$/scratch/setting.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/scratch/restful/verify.py" />
         <option value="$PROJECT_DIR$/scratch/templates/scratch.html" />
+        <option value="$PROJECT_DIR$/scratch/restful/verify.py" />
       </list>
     </option>
   </component>
@@ -223,24 +224,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web_chat_sratch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we_chat_scratch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scratch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -259,6 +242,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scratch/static/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/scratch/templates" />
     </key>
@@ -508,14 +492,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.6022444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.6022444" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39775562" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -607,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratch/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="621" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_we_chat_scratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="12" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
@@ -642,15 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratch/restful/verify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="7.2" vertical-offset="480" max-vertical-offset="3780">
-          <folding>
-            <element signature="e#34#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scratch/templates/pub_home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="12" selection-start="53" selection-end="123" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="555">
@@ -660,8 +628,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scratch/templates/scratch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="401" selection-end="401" vertical-scroll-proportion="0.4176334" vertical-offset="0" max-vertical-offset="1215">
+        <state line="12" column="35" selection-start="401" selection-end="401" vertical-scroll-proportion="0.625" vertical-offset="195" max-vertical-offset="1215">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/restful/verify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="49" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.4883721" vertical-offset="645" max-vertical-offset="3780">
+          <folding>
+            <element signature="e#34#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

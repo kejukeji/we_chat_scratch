@@ -54,7 +54,7 @@ def response_text(xml_recv, web_chat, pub_id):
             "item": [{
                 "Title": '刮刮',
                 "Description": '好玩',
-                "PicUrl": '',
+                "PicUrl": BASE_URL + '/static/images/scratch_matter.jpg',
                 "Url": BASE_URL + '/scratch/home'
             }]
     }
