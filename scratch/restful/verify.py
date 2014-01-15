@@ -52,13 +52,13 @@ def response_text(xml_recv, web_chat, pub_id):
             "FromUserName": ToUserName,
             "ArticleCount": 1,
             "item": [{
-                "Title": str('刮刮'),
-                "Description": str('好玩'),
-                "PicUrl": BASE_URL+ '',
+                "Title": '刮刮',
+                "Description": '好玩',
+                "PicUrl": '',
                 "Url": BASE_URL + '/scratch/home'
             }]
-        }
-    return response(web_chat, reply_dict, "text")
+    }
+    return response(web_chat, reply_dict, "news")
 
 
 def response_event(xml_recv, web_chat, pub_id):
