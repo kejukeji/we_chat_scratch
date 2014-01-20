@@ -3,18 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>canvas</title>
+<title>刮刮乐</title>
+<link href="/static/css/scratch.css" rel="stylesheet"/>
 </head>
 
-<body> 
+<body>
+<section>
+    <div class="scratch-div">
+        <canvas id="c-canvas"/>
+    </div>
+</section>
 
-<canvas/> 
 
 <script type="text/javascript">     
 (function(bodyStyle){         
 	bodyStyle.mozUserSelect = 'none';         
 	bodyStyle.webkitUserSelect = 'none';           
-	var img = new Image();         
+	var img = new Image();
+    img.style.className = 'img-size';
 	var canvas = document.querySelector('canvas');         
 	canvas.style.backgroundColor='transparent';         
 	canvas.style.position = 'absolute';           
@@ -25,7 +31,7 @@
 		var mousedown = false;               
 		function layer(ctx){                 
 			ctx.fillStyle = 'gray';                 
-			ctx.fillRect(0, 0, w, h);             
+			ctx.fillRect(0, 0, w, h);
 		}   
 		function eventDown(e){                 
 			e.preventDefault();                 
@@ -45,7 +51,7 @@
 				y = (e.clientY + document.body.scrollTop || e.pageY) - offsetY || 0;                     
 				with(ctx){                    
 					beginPath()                     
-					arc(x, y, 10, 0, Math.PI * 2);
+					arc(x, y, 15, 0, Math.PI * 2);
 					fill();                     
 				}                
 			}             

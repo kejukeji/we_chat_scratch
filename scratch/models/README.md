@@ -1,0 +1,5 @@
+在创建model的同时创建相对应的平凡查询，
+列入根据一个主键id获取一个model
+删除一个model
+添加一个model
+更新model
