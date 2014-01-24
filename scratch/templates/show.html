@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<center>
+{% for u in users %}
+<label>用户名：</label>
+ {{ u.name}}
+&nbsp;
+<label>email:</label>
+{{u.email }}
+<br>
+{% endfor %}
+</center>
+
+</body>
+</html>
