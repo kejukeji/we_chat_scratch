@@ -8,18 +8,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 .scratch-div {
-    margin: 0 1% 1% 1%;
-    background-image: url('/static/images/-bg.png');
-    background-size:contain;
-    background-repeat: repeat-x;
-    position:absolute;
-    width:98%;
-    height:100%;
-    /*z-index:-1*/
+    margin: 1% 10% 10% 10%;
+    background-image: url('/static/images/bg_scratch.jpg');
+    width: 80%;
+    height: 200px;
 }
 #c-canvas {
     margin: 2% 5% 0 4%;
-}
-.img-size {
-    width: 80%;
 }

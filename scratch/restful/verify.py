@@ -33,6 +33,22 @@ def weixin():
             return response_event(xml_recv, web_chat, 1)
         if MsgType == "text":
             return response_text(xml_recv, web_chat, 1)
+        if MsgType == 'voice':
+            return response_voice(xml_recv, web_chat)
+
+
+def response_voice(xml_receive, web_chat):
+    '''对于用户语音进行处理'''
+    recognition = xml_receive.find("Recognition").text
+    toUserName = xml_receive.find("ToUserName").text # 得到接受者
+    fromUserName = xml_receive.find("FromUserName").text # 得到发送者
+    reply_dict = {
+        "ToUserName": fromUserName,
+        "FromUserName": toUserName,
+        "CreateTime": 12345,
+        "Content": recognition
+    }
+    return response(web_chat, reply_dict, 'text')
 
 
 def response_text(xml_recv, web_chat, pub_id):

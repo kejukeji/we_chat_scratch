@@ -7,4 +7,4 @@ reload(sys)
 sys.setdefaultencoding('UTF-8')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=7072, debug=True)
+    app.run(host='0.0.0.0', port=7073, debug=True)
