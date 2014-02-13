@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body style="background-image:url('/static/images/register.jpg')">
+
+<center>
+<form method="post" action="/loginto">
+
+        <lable>用户名：</lable>
+         &nbsp;
+        <input type="text" name="name" >
+        <br>
+        <br>
+        <lable>密  码：</lable>
+        &nbsp;
+    <input type="password" name="password">
+        <br>
+    <br>
+    <input type="submit" value="欢迎登陆">
+    &nbsp;
+    <a href="/register" class="btn" style="">注册</a>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul>
+ {% for message in messages %}
+  <li>{{ message }} </li>
+      {% endfor %}
+ </ul>
+    {% endif %}
+{% endwith %}
+
+
+
+</form>
+</center>
+
+</body>
+</html>

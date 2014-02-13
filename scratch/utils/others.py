@@ -24,3 +24,15 @@ def form_to_dict(form):
             form_dict[key] = form._fields[key].data
 
     return form_dict
+
+
+#取得一个正确的返回字典
+class success_dic(object):
+    def __init__(self):
+        self.dic = {}
+        self.dic['code'] = 200
+        self.dic['message'] = 'success'
+        #self.dic['test'] = 'test success'
+
+    def set(self, k, v):
+        self.dic[k] = v
