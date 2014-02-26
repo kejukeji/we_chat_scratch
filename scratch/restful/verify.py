@@ -58,6 +58,8 @@ def response_text(xml_recv, web_chat, pub_id):
 
     if input_type in ('jia', 'gai'):
         return response_member_text(xml_recv, web_chat, pub_id, input_type)
+    if input_type in ("授权"):
+        return response_oauth(xml_recv, web_chat)
 
     # 下面的句子是鹦鹉学舌，后期改过来
     ToUserName = xml_recv.find("ToUserName").text
@@ -72,6 +74,25 @@ def response_text(xml_recv, web_chat, pub_id):
                 "Description": '好玩',
                 "PicUrl": BASE_URL + '/static/images/scratch_matter.jpg',
                 "Url": BASE_URL + '/scratch/home'
+            }]
+    }
+    return response(web_chat, reply_dict, "news")
+
+
+def response_oauth(xml_receive, web_chat):
+    '''授权'''
+    Content = xml_receive.find("Content").text
+    ToUserName = xml_receive.find("ToUserName").text
+    FromUserName = xml_receive.find("FromUserName").text
+    reply_dict = {
+            "ToUserName": FromUserName,
+            "FromUserName": ToUserName,
+            "ArticleCount": 1,
+            "item": [{
+                "Title": '刮刮',
+                "Description": '好玩',
+                "PicUrl": BASE_URL + '/static/images/scratch_matter.jpg',
+                "Url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd66b61798e08ff5e&redirect_uri=http://scratch.kejukeji.com/oauth&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'
             }]
     }
     return response(web_chat, reply_dict, "news")
@@ -140,6 +161,8 @@ def get_type(Content):
         return "jia"
     if Content.startswith("gai"):
         return "gai"
+    if Content.startswith("授权"):
+        return "授权"
 
 
 def response_member_text(xml_recv, web_chat, pub_id, input_type):

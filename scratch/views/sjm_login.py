@@ -51,6 +51,13 @@ def showusers():
     return render_template('show.html',users=users)
 
 
+def oauth():
+    '''授权回掉方法'''
+    user_name = request.args.get('nickname')
+    return render_template('sjm.html',
+                           user_name=user_name)
+
+
 
 
 
