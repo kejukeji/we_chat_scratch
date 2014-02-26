@@ -92,7 +92,7 @@ def response_oauth(xml_receive, web_chat):
                 "Title": '刮刮',
                 "Description": '好玩',
                 "PicUrl": BASE_URL + '/static/images/scratch_matter.jpg',
-                "Url": 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd66b61798e08ff5e&redirect_uri=http://scratch.kejukeji.com/oauth&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'
+                "Url": 'https://open.weixin.qq.com/oauth?appid=wxd66b61798e08ff5e&response_type=code&redirect_uri=scratch.kejukeji.com/oauth'
             }]
     }
     return response(web_chat, reply_dict, "news")
