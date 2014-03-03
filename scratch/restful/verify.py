@@ -84,7 +84,7 @@ def response_oauth(xml_receive, web_chat):
     Content = xml_receive.find("Content").text
     ToUserName = xml_receive.find("ToUserName").text
     FromUserName = xml_receive.find("FromUserName").text
-    Content = '<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd66b61798e08ff5e&redirect_uri=http%3A%2F%2Fscratch.kejukeji.com%2Foauth&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect">点击授权</a>'
+    Content = '<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd66b61798e08ff5e&redirect_uri=http%3A%2F%2Fscratch.kejukeji.com%2Foauth_info&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect">点击授权</a>'
     reply_dict = {
             "ToUserName": FromUserName,
             "FromUserName": ToUserName,
