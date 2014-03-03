@@ -21,12 +21,12 @@ def get_token():
     user_info_result = urllib2.urlopen(get_user_info_url) # 请求此url的结果
     json_user_info = user_info_result.read() # 得到json结果
 
-    # nickname = json.loads(json_user_info)['sex'] # 得到用户的昵称
+    nickname = json.loads(json_user_info)['nickname'] # 得到用户的昵称
     return """
     <html>
     <head><title>用户昵称</title></head>
     <body>
-    """+open_id+"""
+    """+nickname+"""
     </body>
     </html>
     """
