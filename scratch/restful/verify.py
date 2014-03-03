@@ -84,18 +84,15 @@ def response_oauth(xml_receive, web_chat):
     Content = xml_receive.find("Content").text
     ToUserName = xml_receive.find("ToUserName").text
     FromUserName = xml_receive.find("FromUserName").text
+    Content = '<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd66b61798e08ff5e&redirect_uri=scratch.kejukeji.com/oauth&response_type=code&scope=SCOPE&state=STATE">点击授权</a>'
     reply_dict = {
             "ToUserName": FromUserName,
             "FromUserName": ToUserName,
-            "ArticleCount": 1,
-            "item": [{
-                "Title": '刮刮',
-                "Description": '好玩',
-                "PicUrl": BASE_URL + '/static/images/scratch_matter.jpg',
-                "Url": 'https://open.weixin.qq.com/oauth?appid=wxd66b61798e08ff5e&response_type=code&redirect_uri=scratch.kejukeji.com/oauth'
-            }]
+            "CreateTime": 1,
+            "Content": Content
+
     }
-    return response(web_chat, reply_dict, "news")
+    return response(web_chat, reply_dict, "text")
 
 
 def response_event(xml_recv, web_chat, pub_id):
