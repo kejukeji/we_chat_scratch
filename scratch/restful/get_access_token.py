@@ -9,7 +9,7 @@ reload(sys)
 def get_token():
     '''获取token'''
     code = request.args.get('code') # 得到用户同意授权的code
-    get_access_token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code='+ code +'&grant_type=authorization_code'
+    get_access_token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=d04dd7c764cc9b348d390eb81340a778&code='+ code +'&grant_type=authorization_code'
     access_token = urllib2.urlopen(get_access_token_url) # 访问此url得到token
     json_token = access_token.read() # 读取token
 
