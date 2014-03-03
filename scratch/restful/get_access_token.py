@@ -26,7 +26,7 @@ def get_token():
     <html>
     <head><title>用户昵称</title></head>
     <body>
-    """+nickname+"""
+    <input type='text' value='"""+access_token+"""'/>
     </body>
     </html>
     """
