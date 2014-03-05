@@ -15,15 +15,17 @@ def get_token():
     weChat = WebChat('7072',appid, secret, code)
     result = weChat.oauth_user_info() # 得到授权后用户信息json字符串
     nickname = json.loads(result)['nickname']
+    header_image_url = json.loads(result)['headimgurl']
     if result != 'None':
         return """
         <html>
         <head><title>Error</title></head>
         <body>
-            <h1>"""+ nickname +"""</h1>
+            <h1>%s</h1>
+            <img href='%s'/>
         </body>
         </html>
-        """
+        """ % (nickname, header_image_url)
     else:
         return """
         <html>
