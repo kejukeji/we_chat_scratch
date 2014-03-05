@@ -22,7 +22,7 @@ def get_token():
         <head><title>Error</title></head>
         <body>
             <h1>%s</h1>
-            <img href='%s'/>
+            <img src='%s'/>
         </body>
         </html>
         """ % (nickname, header_image_url)
