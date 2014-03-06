@@ -59,7 +59,7 @@ def response_text(xml_recv, web_chat, pub_id):
     if input_type in ('jia', 'gai'):
         return response_member_text(xml_recv, web_chat, pub_id, input_type)
     if input_type in ("授权"):
-        return response_oauth(xml_recv, web_chat)
+        return response_address(xml_recv, web_chat)
     if input_type in ("地址"):
         return response_address(xml_recv, web_chat)
 
