@@ -60,6 +60,8 @@ def response_text(xml_recv, web_chat, pub_id):
         return response_member_text(xml_recv, web_chat, pub_id, input_type)
     if input_type in ("授权"):
         return response_oauth(xml_recv, web_chat)
+    if input_type in ("地址"):
+        return response_address(xml_recv, web_chat)
 
     # 下面的句子是鹦鹉学舌，后期改过来
     ToUserName = xml_recv.find("ToUserName").text
@@ -85,6 +87,21 @@ def response_oauth(xml_receive, web_chat):
     ToUserName = xml_receive.find("ToUserName").text
     FromUserName = xml_receive.find("FromUserName").text
     Content = '<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd66b61798e08ff5e&redirect_uri=http%3A%2F%2Fscratch.kejukeji.com%2Foauth_info&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect">点击授权</a>'
+    reply_dict = {
+            "ToUserName": FromUserName,
+            "FromUserName": ToUserName,
+            "CreateTime": 1,
+            "Content": Content
+
+    }
+    return response(web_chat, reply_dict, "text")
+
+
+def response_address(xml_receive, web_chat):
+    '''获取地理位置'''
+    ToUserName = xml_receive.find("ToUserName").text
+    FromUserName = xml_receive.find("FromUserName").text
+    Content = 'http://www.w3school.com.cn/tiy/t.asp?f=html5_geolocation'
     reply_dict = {
             "ToUserName": FromUserName,
             "FromUserName": ToUserName,
