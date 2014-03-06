@@ -101,7 +101,7 @@ def response_address(xml_receive, web_chat):
     '''获取地理位置'''
     ToUserName = xml_receive.find("ToUserName").text
     FromUserName = xml_receive.find("FromUserName").text
-    Content = 'http://www.w3school.com.cn/tiy/t.asp?f=html5_geolocation'
+    Content = '<a href="http://www.w3school.com.cn/tiy/t.asp?f=html5_geolocation">坐标</a>'
     reply_dict = {
             "ToUserName": FromUserName,
             "FromUserName": ToUserName,
